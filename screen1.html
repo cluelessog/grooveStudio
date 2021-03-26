@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- music player title -->
+    <title>Groove Player</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- stylesheet inclusions -->
+    <link rel="stylesheet" type="text/css" href="screen1.css">
+</head>
+<body class="m0">
+
+    <!-- header -> navbar -->
+    <header id="header">
+        <nav id="navbar">
+            <!-- music player brand container -->
+            <div id="nav-brand-container">
+                <a href="" id="nav-brand-icon"><img src="media/nav-musicplayer-icon.svg"></a>
+                
+                <div id = "nav-brand-text" class="text-center">
+                    <h5>Groove</h5>
+                    <h4>Studio</h4>
+                </div>
+            </div>
+            <!-- favourites -->
+            <div id="favs">
+                <h4>
+                    Favourites
+                </h4>
+            </div>
+
+            <!-- nav searchbar and user profile -->
+            <div id="search-bar">
+                <!-- search form -->
+                <form id="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="Search" placeholder="search">
+                    <i class="fas fa-microphone search-icon"></i>
+                </form>
+            </div>
+            <!-- notification bell -->
+            <div id="notification-bell">
+                <a href=""><img src="media/notification.svg"></a>
+            </div>
+            <!-- user profile image -->
+            <div id="user-image">
+                <a href=""><img src="media/user.png"></a>
+            </div>
+
+        </nav>
+    </header>
+    
+
+    <!-- main  carousel, latest release,popular artist etc-->
+    <main>
+        <!-- carousel -->
+        <section id="carousel">
+            <div id="carousel-container" class="image-cards-container">
+                <img class="carousel-image" src="media/carousel images/carousel-image-1.webp">
+                <img class="carousel-image" src="media/carousel images/carousel-image-2.webp">
+                <img class="carousel-image" src="media/carousel images/carousel-image-3.webp">
+            </div>
+        </section>
+
+
+      <!-- latest release -->
+
+
+      <section id="latestrelease">
+        <div class="main-container-common">
+        <h4 class="section-heading">Latest Release</h4>
+        <div id="latest-release-container">
+            <!-- trackwise containers -->
+            <div class="track-container">
+                <!-- track image -->
+                <div class="track-image image-hover">
+                    <img src="media/latest-track/track image.jpg" class="image">
+                    <div class="content-overlay">
+                        <a href="#"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- details of track -->
+                <div class="track-details">
+                    <h5>Onism</h5>
+                    Aug 11,2017
+                </div>
+                <!-- track menu -->
+                <div class="track-menu text-right">
+                    <!-- using hidden checkbox as button for track menu -->
+                    <input id="check-1" type="checkbox" name="dropdown" />
+                    <label for="check-1"><i class="fas fa-ellipsis-h"></i></label>
+                    <!-- dropdown container -->
+                   <div class="dropdown-container m0">
+                       <ul class="no-style-list">
+                           <li>
+                               <i class="fas fa-play"></i>
+                               <a href=""></a></i>Play Now</a>
+                            </li>
+                           <li>
+                                <i class="fas fa-plus"></i>
+                               <a href="">Add To Queue</a>
+                            </li>
+                           <li>
+                                <i class="fas fa-stream"></i>
+                               <a href="">Add To Favourites</a>
+                            </li>
+                           <li>
+                                <i class="fas fa-info-circle"></i>
+                               <a href="">Get Info</a>
+                            </li>
+                       </ul>
+
+                   </div> 
+                   <p class="mt-3px">
+                    4.44
+                  </p> 
+                </div>
+
+            </div>
+
+            <!-- trackwise containers -->
+            <div class="track-container">
+                <!-- track image -->
+                <div class="track-image image-hover">
+                    <img src="media/latest-track/track image.jpg" class="image">
+                    <div class="content-overlay">
+                        <a href="#"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- details of track -->
+                <div class="track-details">
+                    <h5>Onism</h5>
+                    Aug 11,2017
+                </div>
+                <!-- track menu -->
+                <div class="track-menu text-right">
+                    <!-- using hidden checkbox as button for track menu -->
+                    <input id="check-2" type="checkbox" name="dropdown" />
+                    <label for="check-2"><i class="fas fa-ellipsis-h"></i></label>
+                    <!-- dropdown container -->
+                   <div class="dropdown-container m0">
+                       <ul class="no-style-list">
+                        <li>
+                            <i class="fas fa-play"></i>
+                            <a href=""></a></i>Play Now</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-plus"></i>
+                            <a href="">Add To Queue</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-stream"></i>
+                            <a href="">Add To Favourites</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-info-circle"></i>
+                            <a href="">Get Info</a>
+                         </li>
+                       </ul>
+
+                   </div>
+                   <p class="mt-3px">
+                     4.44
+                   </p> 
+                </div>
+
+            </div>
+
+            <!-- trackwise containers -->
+            <div class="track-container">
+                <!-- track image -->
+                <div class="track-image image-hover">
+                    <img src="media/latest-track/track image.jpg" class="image">
+                    <div class="content-overlay">
+                        <a href="#"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- details of track -->
+                <div class="track-details">
+                    <h5>Onism</h5>
+                    Aug 11,2017
+                </div>
+                <!-- track menu -->
+                <div class="track-menu text-right">
+                    <!-- using hidden checkbox as button for track menu -->
+                    <input id="check-3" type="checkbox" name="dropdown" />
+                    <label for="check-3"><i class="fas fa-ellipsis-h"></i></label>
+                    <!-- dropdown container -->
+                   <div class="dropdown-container m0">
+                       <ul class="no-style-list">
+                        <li>
+                            <i class="fas fa-play"></i>
+                            <a href=""></a></i>Play Now</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-plus"></i>
+                            <a href="">Add To Queue</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-stream"></i>
+                            <a href="">Add To Favourites</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-info-circle"></i>
+                            <a href="">Get Info</a>
+                         </li>
+                       </ul>
+
+                   </div> 
+                   <p class="mt-3px">
+                    4.44
+                  </p> 
+                </div>
+
+            </div>
+
+            <!-- trackwise containers -->
+            <div class="track-container">
+                <!-- track image -->
+                <div class="track-image image-hover">
+                    <img src="media/latest-track/track image.jpg" class="image">
+                    <div class="content-overlay">
+                        <a href="#"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- details of track -->
+                <div class="track-details">
+                    <h5>Onism</h5>
+                    Aug 11,2017
+                </div>
+                <!-- track menu -->
+                <div class="track-menu text-right">
+                    <!-- using hidden checkbox as button for track menu -->
+                    <input id="check-4" type="checkbox" name="dropdown" />
+                    <label for="check-4"><i class="fas fa-ellipsis-h"></i></label>
+                    <!-- dropdown container -->
+                   <div class="dropdown-container m0">
+                       <ul class="no-style-list">
+                        <li>
+                            <i class="fas fa-play"></i>
+                            <a href=""></a></i>Play Now</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-plus"></i>
+                            <a href="">Add To Queue</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-stream"></i>
+                            <a href="">Add To Favourites</a>
+                         </li>
+                        <li>
+                             <i class="fas fa-info-circle"></i>
+                            <a href="">Get Info</a>
+                         </li>
+                       </ul>
+
+                   </div> 
+                   <p class="mt-3px">
+                    4.44
+                  </p> 
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+        </div>
+        </section>
+
+
+
+      <!-- popular artist -->
+      <section id="popularartists">
+          
+        <div class="main-container-common">
+            <h4 class="section-heading">Popular Artists</h4>
+            <!-- artists container -->
+            <div id="artists-container"> 
+                <!-- artist image -->
+                <div class="artist-image image-hover">
+                    <img src="media/artist-image/Ed-Sheeran.jpg"  class="image">
+                    <p class="mt-3px text-center">ED Sheeran</p>
+                    <div class="content-overlay">
+                        <a href="screen2.html"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- artist image -->
+                <div class="artist-image image-hover">
+                    <img src="media/artist-image/freddie.jpg"  class="image">
+                    <p class="mt-3px text-center">Freddie</p>
+                    <div class="content-overlay">
+                        <a href="screen2.html"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- artist image -->
+                <div class="artist-image image-hover">
+                    <img src="media/artist-image/led-zeppelin2.jpg"  class="image">
+                    <p class="mt-3px text-center">Led Zeppelin</p>
+                    <div class="content-overlay">
+                        <a href="screen2.html"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- artist image -->
+                <div class="artist-image image-hover">
+                    <img src="media/artist-image/pink.jpg"  class="image">
+                    <p class="mt-3px text-center">Pink Floyd</p>
+                    <div class="content-overlay">
+                        <a href="screen2.html"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- artist image -->
+                <div class="artist-image image-hover">
+                    <img src="media/artist-image/coldplay.jpg"  class="image">
+                    <p class="mt-3px text-center">Coldplay</p>
+                    <div class="content-overlay">
+                        <a href="screen2.html"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+                <!-- artist image -->
+                <div class="artist-image image-hover">
+                    <img src="media/artist-image/arijit.jpg"  class="image">
+                    <p class="mt-3px text-center">Arijit Singh</p>
+                    <div class="content-overlay">
+                        <a href="screen2.html"><img src="media/latest-track/play.svg"></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        </section>
+
+
+      <!-- music stations -->
+      <section id="stations">
+        <div class="main-container-common">
+
+            <div id="stations-container">
+                <!-- station icon -->
+                <div id="station-icon-container">
+                    <div id="bg1">
+                        <div id="bg2">
+                            <div id="bg3">
+                                <a href="" id="nav-brand-icon"><img src="media/nav-musicplayer-icon.svg"></a>
+                                <span>Stations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- station icon ends -->
+
+                <!-- each station begins -->
+                <div class="station-image image-hover">
+                    <img src="media/stations/love.jpg"  class="image">
+                    <div class="content-overlay">
+                        <a href="#">Love</a>
+                    </div>
+                </div>
+
+                <div class="station-image image-hover">
+                    <img src="media/stations/chill.jpg"  class="image">
+                    <div class="content-overlay">
+                        <a href="#">Chill</a>
+                    </div>
+                </div>
+
+                <div class="station-image image-hover">
+                    <img src="media/stations/pop.jpg"  class="image">
+                    <div class="content-overlay">
+                        <a href="#">Pop</a>
+                    </div>
+                </div>
+
+                <div class="station-image image-hover">
+                    <img src="media/stations/rock.jpg"  class="image">
+                    <div class="content-overlay">
+                        <a href="#">Rock</a>
+                    </div>
+                </div>
+
+                <div class="station-image image-hover">
+                    <img src="media/stations/workout.jpg"  class="image">
+                    <div class="content-overlay">
+                        <a href="#">Workout</a>
+                    </div>
+                </div>
+
+                <div class="station-image image-hover">
+                    <img src="media/stations/retro.jpg"  class="image">
+                    <div class="content-overlay">
+                        <a href="#">Retro</a>
+                    </div>
+                </div>
+                <div class="station-image image-hover">
+                    <img src="media/stations/jazz.jpg"  class="image">
+                    <div class="content-overlay">
+                        <a href="#">Jazz</a>
+                    </div>
+                </div>
+
+                <!-- each station ends -->
+
+            </div>
+
+        </div>
+        </section>
+
+
+
+      <!-- genre cards -->
+
+      <section id="genrecards">
+        <div class="main-container-common">
+
+            <div id="cards-container" class="image-cards-container">
+                <div class="parent">
+                    <div class="genre-image im1">
+                        <a href="#">Party</a>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="genre-image im2">
+                        <a href="#">Electronic</a>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="genre-image im3">
+                        <a href="#">Road Trip</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+
+      <!-- latest english -->
+      <section id="latestenglish">
+        <div class="main-container-common">
+            <h4 class="section-heading">Latest English</h4>
+            <!-- container for english tracks -->
+            <div id="latest-english-container" class="latest-genre-tracks">
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Onism</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Onism</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Onism</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Onism</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Onism</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Onism</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+      <!-- latest hindi -->
+      <section id=latesthindi>
+        <div class="main-container-common">
+            <!-- container for hindi tracks -->
+            <h4 class="section-heading">Latest Hindi</h4>
+            <div id="latest-hindi-container" class="latest-genre-tracks">
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-hindi/annkhmarein.webp" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Ankh marein</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-hindi/bekhayali.webp" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Bekhayali</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-hindi/kamli.webp" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Kamli</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-hindi/khaalipeei.webp" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Khaali peeli</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-hindi/pachtaoge.webp" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Pachtaoge</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+                <div class="track-container">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-hindi/pal.webp" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <!-- details of track -->
+                    <div class="details-block">
+                        <h5>Pal</h5>
+                        Aug 11,2017
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <!-- queue hover for responsive layout -->
+        <section id="hover-btn">
+            <label for="track-queue"><i class="fas fa-bars">Tracks</i></label>
+            <input type="checkbox" id="track-queue">
+            <aside id="hover-aside">
+                <!-- header -->
+                <section id="queuesection">
+                    <div id="aside-header" class="text-center">
+                        <div id="left" class="text-center">
+                            Queue
+                        </div>
+                        <div id="right" class="text-center">
+                            Queue
+                            <input id="queue-hover" type="checkbox" name="dropdown" />
+                            <label for="queue-hover"><i class="fas fa-chevron-down"></i></label>
+                            <div class="dropdown-container m0">
+                                <ul class="no-style-list">
+                                 <li>
+                                     <a href=""></a></i>Playlists</a>
+                                  </li>
+                                 <li>
+                                     <a href="">Favourite Songs</a>
+                                  </li>
+                                </ul>
+            
+                            </div>
+                        </div> 
+                    </div>
+                </section>
+                
+                <!-- track list -->
+                <div class="track-queue-container">
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            01
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            02
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            03
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            04
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            05
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            06
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            07
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            08
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            09
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            10
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            11
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            12
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            13
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            14
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-track">
+                        <div class="track-num text-center">
+                            15
+                        </div>
+                        <div class="details">
+                            <div class="track-image image-hover">
+                                <img src="media/latest-track/track image.jpg" class="image">
+                                <div class="content-overlay">
+                                    <a href="#"><img src="media/latest-track/play.svg"></a>
+                                </div>
+                            </div>
+                            <div class="track-info">
+                                <h5>Worrie About Us</h5>
+                                Rossie Lowe
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+        
+            </aside>
+        </section>
+    </main>
+
+    <!-- main section ends here -->
+
+
+    <!-- aside -> track queue-->
+    
+    <aside>
+        <!-- header -->
+        <section id="queuesection">
+            <div id="aside-header" class="text-center">
+                <div id="left" class="text-center">
+                    Queue
+                </div>
+                <div id="right" class="text-center">
+                    Queue
+                    <label for="queue"><i class="fas fa-chevron-down"></i></label>
+                    <input id="queue" type="checkbox" name="dropdown" />
+                    <div class="dropdown-container m0">
+                        <ul class="no-style-list">
+                         <li>
+                             <a href=""></a></i>Playlists</a>
+                          </li>
+                         <li>
+                             <a href="">Favourite Songs</a>
+                          </li>
+                        </ul>
+    
+                    </div>
+                </div> 
+            </div>
+        </section>
+        
+        <!-- track list -->
+        <div class="track-queue-container">
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    01
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    02
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    03
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    04
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    05
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    06
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    07
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    08
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    09
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    10
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    11
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    12
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    13
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    14
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="playlist-track">
+                <div class="track-num text-center">
+                    15
+                </div>
+                <div class="details">
+                    <div class="track-image image-hover">
+                        <img src="media/latest-track/track image.jpg" class="image">
+                        <div class="content-overlay">
+                            <a href="#"><img src="media/latest-track/play.svg"></a>
+                        </div>
+                    </div>
+                    <div class="track-info">
+                        <h5>Worrie About Us</h5>
+                        Rossie Lowe
+                    </div>
+                </div>
+                <div class="heart">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </aside>
+<!-- aside section ends here -->
+
+    <!-- footer -->
+    <footer>
+        
+        <!-- player container -->
+        <div id="player-container">
+            <!-- active track detail container -->
+            <div id="active-track-container" class="text-left">
+                <!-- details -->
+                <div>
+                    <img src="media/latest-track/track image.jpg">
+                </div>
+                <div id="active-track-info" class="track-info">
+                    <h5>Worrie About Us</h5>
+                    Rossie Lowe
+                </div>
+                <!-- icons -->
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ban"></i>
+                </div>
+        
+            </div>
+            <!--active details container ends -->
+
+            <!-- music controls -->
+            <div id="player-controls" class="text-center">
+                <!-- player buttons -->
+                <div class="btns">
+                    <a class="shuffle icon-shuffle" href="#"><i class="fas fa-random"></i></a>
+                    <a class="back icon-backward" href="#"><i class="fas fa-step-backward"></i></a>
+                    <a class="play icon-play" href="#"><i class="fas fa-pause-circle"></i></a>
+                    <a class="forward icon-forward" href="#"><i class="fas fa-step-forward"></i></a>
+                    <a class="loop icon-loop" href="#"><i class="fa fa-sync-alt"></i></a>
+                </div>
+                <!-- player slider -->
+                    <div class="slider-container">
+                        <span class="current-playhead">
+                            1:39
+                        </span>
+                        <input type="range" value="20" class="slider">
+                        <span class="total-time">
+                            4:44
+                        </span>
+                    </div>
+                
+            </div>
+            <!-- music control ends here -->
+            
+            
+            <!-- volume and other controls -->
+            <div id="volume-controls" class="text-center">
+                    <a class="shuffle icon-list" href="#"><i class="fas fa-list-ul"></i></i></a>
+                    <a class="back icon-laptop" href="#"><i class="fas fa-laptop"></i></a>
+                    <a class="back icon-vol-up" href="#"><i class="fas fa-volume-up"></i></a>
+                    <input type="range" value="10" id="vol-slider">
+                    <a class="forward icon-expand" href="#"><i class="fas fa-expand-arrows-alt"></i></a>
+            </div>
+
+        </div>
+        
+        
+    </footer>
+</body>
+</html>

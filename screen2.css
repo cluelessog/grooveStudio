@@ -1,0 +1,829 @@
+/* css variables */
+:root {
+    --track-bg-color:  #de4463;
+    --jumbotron-bg-color: #de4463;
+    --main-background-color: #821752;
+    --search-box-background: #f8efd4;
+    --icon-color: #edc988;
+  }
+
+  /* animations */
+  @keyframes ring {
+    0% { transform: rotate(0); }
+    1% { transform: rotate(30deg); }
+    3% { transform: rotate(-28deg); }
+    5% { transform: rotate(34deg); }
+    7% { transform: rotate(-32deg); }
+    9% { transform: rotate(30deg); }
+    11% { transform: rotate(-28deg); }
+    13% { transform: rotate(26deg); }
+    15% { transform: rotate(-24deg); }
+    17% { transform: rotate(22deg); }
+    19% { transform: rotate(-20deg); }
+    21% { transform: rotate(18deg); }
+    23% { transform: rotate(-16deg); }
+    25% { transform: rotate(14deg); }
+    27% { transform: rotate(-12deg); }
+    29% { transform: rotate(10deg); }
+    31% { transform: rotate(-8deg); }
+    33% { transform: rotate(6deg); }
+    35% { transform: rotate(-4deg); }
+    37% { transform: rotate(2deg); }
+    39% { transform: rotate(-1deg); }
+    41% { transform: rotate(1deg); }
+  
+    43% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+  }
+  @keyframes pulse{
+    25%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+  }
+/* general css */
+html{
+    overflow: hidden;
+}
+body{
+    /* padding-top: 60px; */
+    background-color : var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+
+/* Common Text Align Classes */
+
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+/* common margin class */
+.m0{
+    margin: 0;
+}
+.mt-3px{
+    margin-top: 3px;
+}
+/* all section common class */
+.section-heading{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.main-container-common{
+    padding: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+/* remove margins from all heading and para tags */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* dropdown list css */
+.no-style-list{
+    list-style: none;
+    text-align: left;
+    margin: -5px 0px;
+    padding: 0.5rem;	
+	color: #333;	
+    
+}
+
+.no-style-list li {
+    font-weight: 100;
+    font-size: 0.9rem;
+    padding: 3px;
+    border-bottom: 2px solid white;
+	border-top: 2px solid #DBDBDB;
+}
+
+.no-style-list li a{
+    list-style: none;
+    color: var(--main-background-color);
+    text-decoration: none;
+}
+.no-style-list li i{
+    display: inline;
+    color: var(--fa-icons-color);
+    margin-right: 10px;
+}
+
+
+.no-style-list li:first-child {
+	border-top: none;
+}
+ 
+.no-style-list li:last-child {
+	border-bottom: none;
+}
+/* dropdown list css ends here */
+
+/* header nav css starts here*/
+#navbar{
+    width: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: inherit;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* background-color : var(--main-background-color); */
+    z-index: 20;
+}
+/* all divs inside nav bar should be inline blocks so that they stack horizontally */
+#navbar > div{
+    display: inline-block;
+}
+#nav-brand-text{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    margin-top: -35px;
+}
+#nav-brand-text h4,h5{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 600;
+}
+#nav-brand-icon img{
+    width: 35px;
+    height: 35px;
+    margin : 5px;
+    animation: pulse 0.5s ease-in infinite;
+}
+
+/* favourites css */
+#favs{
+    margin-left: 5%; 
+}
+#favs h4{
+    color : white;
+}
+
+/* search bar css */
+#search-bar{
+    width: 20%;
+    position: relative;
+    margin-left: 15%;
+}
+/* search input form css */
+#search-input .search-icon{
+    position: absolute;
+    top: 20%;
+    color: var(--icon-color);
+    display: inline-block;
+}
+#search-input .fa-search{
+    left: 5%;
+}
+#search-input .fa-microphone{
+   left: 90%;
+}
+input[type=text]{
+    border: 0px solid transparent;
+    border-radius: 8px;
+    width: 100%;
+    background: var(--search-box-background);
+    text-indent: 15%;
+    color: var(--icon-color);
+    line-height: 2;
+}
+input::placeholder{
+    color: var(--icon-color);
+}
+input:focus{
+    outline: none;
+}
+/* notification bell css */
+#notification-bell{
+    height: 30px;
+    width: 30px;
+}
+#notification-bell img{
+    width: 30px;
+    animation: ring 4s .7s ease-in-out infinite;
+}
+/* user profile css */
+#user-image{
+    height: 40px;
+    width: 40px;
+    color: white;
+}
+#user-image img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* navbar css ends */
+
+
+/* main content css starts here */
+main{
+    width: 65%;
+    height: 80vh;
+    position: fixed;
+    top: 10%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left : 5%;
+    overflow: hidden;
+}
+
+/* jumbotron starts here */
+#jumbotron-container{
+    position: relative;
+    top: 0;
+    height: 50%;
+    padding: 10px;
+    /* border : 1px solid red; */
+}
+
+.jumbotron{
+    background: var(--jumbotron-bg-color);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: inherit;
+    opacity: 1;
+}
+.jt-image{
+    position: relative;
+    left: 0;
+    width: 30vw;
+    max-width: 250px;
+    height: 100%;
+    background-image: linear-gradient( to bottom, transparent, var( --jumbotron-bg-color) ), url(media/artist-image/coldplay.jpg);
+    background-size: cover;
+}
+.jt-description{
+    position: relative;
+    left: 0;
+    width: 50vw;
+    margin-left: 2%;
+    max-width: 550px;
+    height: inherit;
+    padding: 0px 10px;
+}
+.band-description{
+    height: 110px;
+    margin-top : 30px;
+}
+.band-description #left{
+    display: inline-block;
+}
+.band-description #right{
+    float: right;
+}
+.band-description #left h3,h4{
+    color: white;
+}
+.band-description #left h4{
+    font-size: 0.6rem;
+    line-height: 1.5;
+}
+
+.band-description #right h5{
+    font-size: 0.7rem;
+    line-height: 1.4;
+}
+.band-description p{
+    font-size: 0.6rem;
+    margin-top: 5px;
+    text-align: justify;
+    color: var(--icon-color);
+    line-height: 1.4;
+}
+.play-button{
+    height: 80px;
+    width: 80%;
+    margin-top: 3%;
+}
+.btn-play{
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+}
+.follow{
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    margin-left: 10px;
+}
+.btn-hover {
+    width: 10vw;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:focus {
+    outline: none;
+}
+.play-button p {
+    margin-top: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
+/* jumbotron ends here */
+
+/* track list starts */
+.artist-track-list{
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 40vh;
+}
+.artist-track-list .track-queue-container{
+    margin-top: 0%;
+    padding: 10px;
+}
+.artist-track-list .track-queue-container .playlist-track{
+    width: 100%;
+    background-color: var(--track-bg-color);
+    max-width: none;
+}
+.artist-track-list .track-queue-container .playlist-track .heart{
+    margin-left: 40vw;
+    margin-right: 5%;
+}
+#icon-plus
+{
+    margin-left : 1%;
+    margin-right: 5%;
+}
+
+/* track list ends */
+/* main ends */
+
+
+/* aside1 css starts here */
+#aside1{
+    top: 12%;
+}
+/* reused the latest release container css here */
+#latest-release-container{
+    margin-top:5%;
+    padding: 10px;
+    overflow: hidden;
+}
+#latest-release-container > div{
+    margin: 20px 0px;
+    margin-right: 15px;
+    position: relative;
+    display: block;
+}
+/* track container css */
+.track-container > div
+{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+}
+.track-image img{
+    width: 70px;
+    height: 70px;
+}
+
+.image-hover .content-overlay img{
+    height: 35px;
+    width: 35px;
+}
+.content-overlay
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.image-hover:hover .image{
+    filter: blur(2px);
+}
+  
+.image-hover:hover .content-overlay{
+    transition: all 0.1s ease-in;
+    opacity: 1;
+    
+}
+.track-details{
+    vertical-align: middle;
+    margin-top: -60px;
+    margin-left: 7px;
+    font-size: 0.8rem;
+    color: var(--icon-color);
+}
+.track-details h5{
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+/* track dropdown menu css */
+.track-menu{
+    float: right;
+    color: var(--icon-color);
+    font-size: 0.8rem;
+}
+.track-menu i{
+    display: block;
+    color: var(--fa-icons-color);
+}
+.dropdown-container{
+    background: white;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+    z-index: 10;
+    top: 50%;
+    right: 0%;
+}
+/* using checkbox as button */
+input[type="checkbox"]{
+    display: none;
+}
+label {
+    cursor: pointer;
+  }
+input[type="checkbox"]:checked~.dropdown-container
+{
+    display: block;
+    width: max-content;
+    opacity: 1;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* aside1 css ends here */
+
+
+
+/* aside 2 section css starts */
+.aside-rules{
+    width: 25%;
+    max-width: 275px;
+    height: 35vh;
+    position: fixed;
+    left: 72%;
+    top: 55%;
+    /* padding: 15px 20px 0px 10px; */
+    /* border: 1px solid white; */
+    /* vertical-align: top; */
+    overflow: hidden;
+    overflow-y: scroll;
+    display: inline-block;
+}
+
+/* aside header starts */
+#queuesection{
+    width: inherit;
+    max-width: 275px;
+}
+#aside-header{
+    height: 30px;
+    color: white;
+    max-width: 275px;
+    width: inherit;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--main-background-color);
+}
+
+#aside-header .dropdown-container{
+    right: 5%;
+    top: auto;
+}
+#aside-header .dropdown-container .no-style-list{
+    padding: 10px;
+}
+
+#aside-header #left{
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 15px;
+    display: inline-block;
+    float: left;
+}
+#aside-header #right{
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 15px;
+    display: inline-block;
+    margin-left: 40%;
+}
+#aside-header #right i{
+    margin-left: 10px;
+}
+/* aside header ends */
+
+/* tracks queue starts */
+.track-queue-container{
+    margin-top: 10%;
+}
+.playlist-track .heart:hover{
+    color: red;
+}
+.playlist-track{
+    /* border : 1px solid red; */
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 270px;
+    margin: 5px 0px;
+}
+.track-num{
+    width: 10%;
+    max-width: 25px;
+    font-size: 0.8rem;
+    height: inherit;
+    color: var(--icon-color);
+    margin: 0px 2px;
+    line-height: 50px;
+}
+.details{
+    /* border : 1px solid blue; */
+    width: 80%;
+    height: 50px;
+    max-width: 200px;
+    margin: 0px 2px;
+    position: relative;
+}
+.track-info{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    font-size: 0.6rem;
+    margin-left: 2px;
+    color: var(--icon-color);
+}
+.track-info h5{
+    color: white;
+    font-size: 0.7rem;
+    line-height: 25px;
+    margin-bottom: -5px;
+}
+.details img{
+    height: 35px;
+    width: 35px;
+    margin-top: 8px;
+}
+.details .track-image .content-overlay img{
+    height: 15px;
+    width: 15px;
+}
+.details .track-image .content-overlay{
+    left: 9%;
+    top: 45%;
+}
+.heart{
+    /* border : 1px solid violet; */
+    width: 10%;
+    max-width: 25px;
+    color: var(--icon-color);
+    line-height: 50px;
+    margin: 0px -10px;
+    height: inherit;
+    font-size: 0.8rem;
+}
+/* aside 2 section css ends here */
+
+
+
+/* footer section css */
+
+footer
+{
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    position: fixed;
+    box-sizing: border-box;
+    padding:0px 8%;
+    overflow: hidden;
+    background-color: #292828;
+    bottom: 0;
+    z-index: 7;
+}
+/* active track details */
+#player-container{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#player-container > div{
+    position: relative;
+}
+
+#active-track-container
+{
+    width: 20%;
+    max-width: 210px;
+    margin: auto;
+    margin-left: 5px;
+}
+
+#active-track-container .track-info,#active-track-container .track-info h5{
+    left: 50px;
+    top: 25%;
+    font-size: 0.6rem;
+}
+#active-track-container img{
+    height: 45px;
+    width: 45px;
+}
+#active-track-container .icons{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    color: var(--icon-color);
+    font-size: 0.8rem;
+}
+
+
+/* player controls starts here */
+#player-controls{
+    width: 50%;
+    max-width: 550px;
+    margin: auto;
+}
+input[type="range"]{
+    width: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 0px solid #000101;
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    /* width: 100%; */
+    height: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: 0px 0px 0px #d65a5a, 0px 0px 0px #c25757;
+    background:linear-gradient(45deg, #00ccff, blue);
+    border-radius: 25px;
+    border: 0px solid #000101;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px 1px #b1daf1;
+  border: 1px solid #a7a3a3;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #f5f2f3;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+.slider-container{
+    display: inline-block;
+    margin-top: 2px;
+    width: 80%;
+}
+.slider-container span{
+    font-size: 0.8rem;
+    line-height: 2;
+    color: var(--icon-color);
+    vertical-align: text-top;
+}
+.btns a i{
+    color: var(--icon-color);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.btns{
+    margin-top: 5px;
+}
+/* player controls ends */
+
+
+/* volume container css starts */
+#volume-controls{
+    width: 25%;
+    max-width: 250px;
+    margin: auto;
+}
+#vol-slider{
+    width: 60px;
+    vertical-align: middle;
+}
+#volume-controls a i{
+    color: var(--icon-color);
+    margin-top: 2px;
+    margin-left: 8px ;
+    font-size: 0.8rem;
+    margin-right: 8px;
+}
+/* volume container css ends here */
+
+
+/* responsive css starts here */
+@media only screen and (max-width: 1024px)
+{
+    
+    #jumbotron-container{
+        height: 50%;
+    }
+    #active-track-container .icons{
+        left: 80%;
+    }
+    .artist-track-list{
+        height: 50vh;
+    }
+
+} 
+
+ @media only screen and  (max-width: 768px)
+{
+    main{
+        width: 90%;
+    }
+    #aside1,#aside2{
+        display: none;
+    }
+    #active-track-container .icons{
+        left: 110%;
+    }
+    .jt-description{
+        width: 60vw;
+    }
+    .jt-image{
+        min-width: 200px;
+    }
+  
+   
+} 
+ @media only screen and  (max-width: 540px)
+{
+    main{
+        width: 90%;
+    }
+    #favs{
+        display: none !important;
+    }
+    #search-bar{
+        margin-left: 0%;
+        width: 30%;
+
+    }
+    .jt-description{
+        width: 70vw;
+    }
+}
+@media only screen and  (max-width: 448px)
+{
+    main{
+        width: 90%;
+    }
+    
+    #favs{
+        display: none !important;
+    }
+    #search-bar{
+        margin-left: 0%;
+        width: 30%;
+
+    }
+}
